@@ -8,6 +8,7 @@ import { EffectsModule } from '@ngrx/effects'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { TopBarModule } from './shared/modules/topBar/topBar.module'
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -24,7 +25,8 @@ import { environment } from '../environments/environment';
       maxAge: 25,
       logOnly: environment.production
     }),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    TopBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
