@@ -8,11 +8,11 @@ export const getFeedAction = createAction(
   props<{url: string}>()
 )
 
-export const getFeedActionSuccess = createAction(
+export const getFeedSuccessAction = createAction(
   ActionTypes.GET_FEED_SUCCESS,
   props<{feed: GetFeedResponseInterface}>()
 )
 
-export const getFeedActionFailure = createAction(
+export const getFeedFailureAction = createAction(
   ActionTypes.GET_FEED_FAILURE
 )
