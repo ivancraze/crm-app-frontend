@@ -1,4 +1,4 @@
-<div *ngIf='isLoading$ | async'>Loading...</div>
+<mc-loading *ngIf='isLoading$ | async'></mc-loading>
 <mc-error-message *ngIf='error$ | async'></mc-error-message>
 
 <div *ngIf='feed$ | async'>
